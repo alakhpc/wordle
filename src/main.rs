@@ -1,11 +1,10 @@
 mod game;
 
+use crate::game::Placement;
 use clap::Parser;
 use game::Wordle;
 use std::io::{self, Write};
 use wordle::{get_allowed_words, get_random_answer};
-
-use crate::game::Placement;
 
 #[derive(Parser, Debug)]
 #[clap(author, version, about, long_about = None)]
